@@ -8,6 +8,8 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 
+#include "scallop-layouts.dtsi"
+
 / {
     model = "scallop";
     compatible = "scallop";
@@ -17,7 +19,6 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
         zmk,battery = &vbatt;
     };
 
